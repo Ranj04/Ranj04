@@ -6,7 +6,7 @@ I build autonomous, multi-agent systems that do real work — not demos. My focu
 
 - 🔭 Currently building autonomous incident-response and analytics agents on **CrewAI**, **FastAPI**, and **React**
 - 🧠 Into multi-agent architectures, RAG, model fine-tuning (LoRA/Unsloth), and LLM gateways/routing
-- 🏎️ Side interests: OBD-II diagnostics & car tech, MMA/UFC, and sports analytics
+- 🏎️ Side interests: OBD-II diagnostics & car tech, NBA/UFC, personal medicine, and sports analytics
 - 📫 Reach me: ranjiv.jithendran@gmail.com · [LinkedIn](https://www.linkedin.com/in/ranjiv-jithendran/) · [ranjiv.dev](https://ranjiv.dev)
 
 ---
