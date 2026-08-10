@@ -79,52 +79,43 @@ Currently building autonomous incident-response and analytics agents on CrewAI, 
 
 ## Selected Work
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<img src="https://img.shields.io/badge/01-2B83F5?style=flat-square" alt="01" />&nbsp; **[RescueOps](https://github.com/Ranj04/RescueOps.ai)** — Autonomous Incident Responder
 
-### [RescueOps](https://github.com/Ranj04/RescueOps.ai)
-**Autonomous incident responder**
+> Five agents, one incident, and no destructive action without a human saying yes.
 
-A five-agent CrewAI pipeline — triage → diagnosis → remediation → verification → postmortem — with human-approval gates before any destructive action. Routes through an AI gateway with multi-model fallback, plus a live chaos console and ground-truth evaluation dashboard.
+A CrewAI pipeline that runs triage → diagnosis → remediation → verification → postmortem, with approval gates in front of anything irreversible. Routes through an AI gateway with multi-model fallback, and ships with a live chaos console plus a ground-truth evaluation dashboard, so the agents are scored against known-correct outcomes rather than vibes.
 
-<img src="https://img.shields.io/badge/CrewAI-161B22?style=flat-square&logoColor=2B83F5" /> <img src="https://img.shields.io/badge/FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=009688" /> <img src="https://img.shields.io/badge/React-161B22?style=flat-square&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/CrewAI-161B22?style=flat-square&logoColor=2B83F5" alt="CrewAI" /> <img src="https://img.shields.io/badge/FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=009688" alt="FastAPI" /> <img src="https://img.shields.io/badge/React-161B22?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/Evals-161B22?style=flat-square&logoColor=2B83F5" alt="Evals" />
 
-</td>
-<td width="50%" valign="top">
+<br>
 
-### [Expense-Approval Agent](https://github.com/Ranj04/Expense-Approval-Tracker)
-**Receipts, end to end, unattended**
+<img src="https://img.shields.io/badge/02-2B83F5?style=flat-square" alt="02" />&nbsp; **[Expense-Approval Agent](https://github.com/Ranj04/Expense-Approval-Tracker)** — Receipts, End to End, Unattended
 
-Gmail → LLM extraction → Google Sheets → Telegram, with a custom polling layer for near-real-time triggering. Built on the Composio v3 SDK behind a FastAPI webhook.
+> Inbox to spreadsheet to notification, without a human in the middle.
 
-<img src="https://img.shields.io/badge/Composio-161B22?style=flat-square&logoColor=2B83F5" /> <img src="https://img.shields.io/badge/FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=009688" /> <img src="https://img.shields.io/badge/Gemini-161B22?style=flat-square&logo=googlegemini&logoColor=8E75B2" />
+Gmail → LLM extraction → Google Sheets → Telegram, built on the Composio v3 SDK behind a FastAPI webhook. Composio's native triggers weren't fast enough, so it runs a custom polling layer for near-real-time firing.
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<img src="https://img.shields.io/badge/Composio-161B22?style=flat-square&logoColor=2B83F5" alt="Composio" /> <img src="https://img.shields.io/badge/FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=009688" alt="FastAPI" /> <img src="https://img.shields.io/badge/Gemini-161B22?style=flat-square&logo=googlegemini&logoColor=8E75B2" alt="Gemini" />
 
-### [Second Opinion](https://github.com/Ranj04/AI-Car-Quotation) · [Parts Oracle](https://github.com/Ranj04/Harness-Engineeering-Hackathon)
-**Catching repair-quote overcharges**
+<br>
 
-Analyzes car repair quotes against a reference price table to flag overcharges. The Parts Oracle variant runs autonomously — monitoring retailer prices, computing benchmarks in ClickHouse, and publishing cited reports.
+<img src="https://img.shields.io/badge/03-2B83F5?style=flat-square" alt="03" />&nbsp; **[Second Opinion](https://github.com/Ranj04/AI-Car-Quotation)** · **[Parts Oracle](https://github.com/Ranj04/Harness-Engineeering-Hackathon)** — Repair-Quote Analyzer
 
-<img src="https://img.shields.io/badge/FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=009688" /> <img src="https://img.shields.io/badge/ClickHouse-161B22?style=flat-square&logo=clickhouse&logoColor=FFCC01" /> <img src="https://img.shields.io/badge/React-161B22?style=flat-square&logo=react&logoColor=61DAFB" />
+> Tells you what the shop should have charged, with receipts.
 
-</td>
-<td width="50%" valign="top">
+Analyzes a car repair quote line by line against a reference price table and flags the overcharges. The Parts Oracle variant runs unattended — monitoring retailer prices, computing benchmarks in ClickHouse, and publishing reports that cite the sources behind every number.
 
-### [Sports Betting Analytics](https://github.com/Ranj04/SportsBetting-Site)
-**NBA player props vs. the closing line**
+<img src="https://img.shields.io/badge/FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=009688" alt="FastAPI" /> <img src="https://img.shields.io/badge/ClickHouse-161B22?style=flat-square&logo=clickhouse&logoColor=FFCC01" alt="ClickHouse" /> <img src="https://img.shields.io/badge/React-161B22?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/Gemini-161B22?style=flat-square&logo=googlegemini&logoColor=8E75B2" alt="Gemini" />
 
-Player-prop modeling validated by closing-line value against Pinnacle. Separate minutes-projection and per-stat production models, historical ingestion via `nba_api`, ESPN endpoints as live fallback.
+<br>
 
-<img src="https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=3776AB" /> <img src="https://img.shields.io/badge/Modeling-161B22?style=flat-square&logoColor=2B83F5" /> <img src="https://img.shields.io/badge/TypeScript-161B22?style=flat-square&logo=typescript&logoColor=3178C6" />
+<img src="https://img.shields.io/badge/04-2B83F5?style=flat-square" alt="04" />&nbsp; **[Sports Betting Analytics](https://github.com/Ranj04/SportsBetting-Site)** — NBA Player Props
 
-</td>
-</tr>
-</table>
+> Graded against the closing line, because the market is the answer key.
+
+Player-prop modeling validated by closing-line value against Pinnacle. Minutes projection and per-stat production are modeled separately, so a bad night for a starter doesn't quietly poison the production model. Historical ingestion via `nba_api`, with ESPN endpoints as a live fallback.
+
+<img src="https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=3776AB" alt="Python" /> <img src="https://img.shields.io/badge/Modeling-161B22?style=flat-square&logoColor=2B83F5" alt="Modeling" /> <img src="https://img.shields.io/badge/nba__api-161B22?style=flat-square&logoColor=2B83F5" alt="nba_api" /> <img src="https://img.shields.io/badge/TypeScript-161B22?style=flat-square&logo=typescript&logoColor=3178C6" alt="TypeScript" />
 
 <br>
 
