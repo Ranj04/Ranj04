@@ -20,9 +20,11 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # %23 not '#': snk parses these as URLs, so a literal '#' would
+          # start the fragment and silently drop every colour parameter.
           outputs: |
-            dist/github-snake.svg?color_snake=#2B83F5&color_dots=#ebedf0,#c6ddf8,#8fbcf2,#5a9dec,#2B83F5
-            dist/github-snake-dark.svg?color_snake=#2B83F5&color_dots=#161b22,#1d3a5f,#22518a,#2670c2,#2B83F5
+            dist/github-snake.svg?color_snake=%232B83F5&color_dots=%23ebedf0,%23c6ddf8,%238fbcf2,%235a9dec,%232B83F5
+            dist/github-snake-dark.svg?color_snake=%232B83F5&color_dots=%23161b22,%231d3a5f,%2322518a,%232670c2,%232B83F5
 
       # snk runs in Docker as root, leaving dist/ unwritable by the runner user.
       - name: Reclaim dist ownership
