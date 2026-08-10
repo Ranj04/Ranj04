@@ -83,8 +83,8 @@ Currently building autonomous incident-response and analytics agents on CrewAI, 
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ranj04&theme=tokyonight" height="180" alt="GitHub stats" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ranj04&theme=tokyonight" height="180" alt="Top languages" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ranj04&theme=github_dark" height="180" alt="Top languages by repository" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Ranj04&theme=github_dark" height="180" alt="Top languages by commit" />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ranj04/Ranj04/output/github-snake-dark.svg" />
