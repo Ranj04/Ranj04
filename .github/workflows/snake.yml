@@ -1,4 +1,4 @@
-name: Generate Contribution Snake
+name: Generate Profile Assets
 
 on:
   schedule:
@@ -14,14 +14,21 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Generate snake animation
+      - uses: actions/checkout@v4
+
+      - name: Generate contribution snake
         uses: Platane/snk@v3
-        id: snake-gif
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=%232B83F5&color_dots=%23ebedf0,%23c6ddf8,%238fbcf2,%235a9dec,%232B83F5
+            dist/github-snake-dark.svg?color_snake=%232B83F5&color_dots=%23161b22,%231d3a5f,%2322518a,%232670c2,%232B83F5
+
+      - name: Generate language card
+        run: python3 scripts/gen_lang_card.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUT: dist/languages.svg
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
