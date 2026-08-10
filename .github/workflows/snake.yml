@@ -22,9 +22,10 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           # %23 not '#': snk parses these as URLs, so a literal '#' would
           # start the fragment and silently drop every colour parameter.
+          # Contribution cells keep GitHub's green ramp; only the snake is brand blue.
           outputs: |
-            dist/github-snake.svg?color_snake=%232B83F5&color_dots=%23ebedf0,%23c6ddf8,%238fbcf2,%235a9dec,%232B83F5
-            dist/github-snake-dark.svg?color_snake=%232B83F5&color_dots=%23161b22,%231d3a5f,%2322518a,%232670c2,%232B83F5
+            dist/github-snake.svg?color_snake=%232B83F5&color_dots=%23ebedf0,%239be9a8,%2340c463,%2330a14e,%23216e39
+            dist/github-snake-dark.svg?color_snake=%232B83F5&color_dots=%23161b22,%230e4429,%23006d32,%2326a641,%2339d353
 
       # snk runs in Docker as root, leaving dist/ unwritable by the runner user.
       - name: Reclaim dist ownership
